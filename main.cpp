@@ -108,7 +108,7 @@ public:
         if (x > z) swap(x, z);
         if (y > z) swap(y, z);
 
-        return fabs(x * x + y * y - z * z) < 1e-9;
+        return x * x + y * y == z * z;
     }
 
     // Чи є трикутник рівнобедреним
